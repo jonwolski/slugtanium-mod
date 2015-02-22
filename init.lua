@@ -19,6 +19,14 @@ minetest.register_node("slugtanium:stone_with_slugtanium", {
   sounds = default.node_sound_stone_defaults(),
 })
 
+minetest.register_craft({
+  output = 'slugtanium:block',
+  recipe = {
+      {'slugtanium:lump', 'slugtanium:lump', 'slugtanium:lump'},
+      {'slugtanium:lump', 'slugtanium:lump', 'slugtanium:lump'},
+      {'slugtanium:lump', 'slugtanium:lump', 'slugtanium:lump'}
+  }
+})
 
 minetest.register_ore({
   ore_type       = "scatter",
