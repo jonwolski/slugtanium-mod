@@ -5,14 +5,17 @@ minetest.register_node("slugtanium:block", {
   groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2}
 })
 
+minetest.register_craftitem("slugtanium:lump", {
+	description = "Slugtanium Lump",
+	inventory_image = "slugtanium_lump.png",
+})
 
 minetest.register_node("slugtanium:stone_with_slugtanium", {
   description = "Slugtanium Ore",
   tiles = {"slugtanium_ore.png"},
   is_ground_content = true,
   groups = {cracky=3},
---  drop = 'slugtanium_lump',
-  drop = 'slugtanium:block',
+  drop = 'slugtanium:lump',
   sounds = default.node_sound_stone_defaults(),
 })
 
@@ -29,7 +32,7 @@ minetest.register_ore({
   flags          = "absheight",
 })
 
-
 minetest.register_alias("slugtanium","slugtanium:block")
 minetest.register_alias("slug_block","slugtanium:block")
 minetest.register_alias("slug_ore","slugtanium:ore")
+minetest.register_alias("slug_lump","slugtanium:lump")
