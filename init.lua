@@ -13,6 +13,10 @@ minetest.register_craftitem("slugtanium:slug_burpy", {
 	description = "Burpy",
 	inventory_image = "slug_burpy.png",
 })
+minetest.register_craftitem("slugtanium:slug_gewls", {
+	description = "Gewls",
+	inventory_image = "slug_gewls.png",
+})
 
 
 minetest.register_craftitem("slugtanium:lump", {
