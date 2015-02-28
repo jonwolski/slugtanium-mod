@@ -5,6 +5,16 @@ minetest.register_node("slugtanium:block", {
   groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2}
 })
 
+minetest.register_craftitem("slugtanium:slug_chiller", {
+	description = "Chiller",
+	inventory_image = "slug0.png",
+})
+minetest.register_craftitem("slugtanium:slug_burpy", {
+	description = "Burpy",
+	inventory_image = "slug_burpy.png",
+})
+
+
 minetest.register_craftitem("slugtanium:lump", {
 	description = "Slugtanium Lump",
 	inventory_image = "slugtanium_lump.png",
