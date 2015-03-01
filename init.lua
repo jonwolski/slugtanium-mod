@@ -19,6 +19,18 @@ minetest.register_craftitem("slugtanium:slug_gewls", {
 })
 
 
+local elements = { "fire", "earth", "energy", "water", "air" }
+for _,element in pairs(elements) do
+
+  minetest.register_craftitem(
+    "slugtanium:slug_" .. element .. "_elemental",
+    {
+      description = element .. " elemental slug",
+      inventory_image = "slug_" .. element .. "_elemental.png"
+    }
+  )
+end
+
 minetest.register_craftitem("slugtanium:lump", {
 	description = "Slugtanium Lump",
 	inventory_image = "slugtanium_lump.png",
